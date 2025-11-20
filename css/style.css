@@ -1,0 +1,68 @@
+/* All Common CSS Start */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+    line-height: 0.8;
+}
+
+/* All Common CSS End */
+
+/* Header Part Start */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.nav-link {
+    color: #dddddd;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Oswald", sans-serif;
+}
+
+.scocialPart a {
+    margin: 0 5px;
+    color: #dddddd;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Oswald", sans-serif;
+}
+
+/* Header Part End */
+
+/* Banner Part Start */
+#bannerPart {
+    padding-top: 340px;
+    padding-bottom: 100px;
+    background: url(../Images/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Banner Part End */
