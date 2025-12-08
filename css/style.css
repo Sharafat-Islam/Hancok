@@ -36,7 +36,6 @@ p {
     top: 0;
     left: 0;
     width: 100%;
-    justify-content: center;
 }
 
 .nav-link {
@@ -44,7 +43,12 @@ p {
     font-size: 16px;
     font-weight: 400;
     font-family: "Oswald", sans-serif;
-    justify-content: center;
+    text-decoration-color: #FF4655;
+    transition: .5s;
+}
+
+.nav-link:hover {
+    color: #FF4655;
 }
 
 .socialPart a {
@@ -53,6 +57,12 @@ p {
     font-size: 16px;
     font-weight: 400;
     font-family: "Oswald", sans-serif;
+    text-decoration-color: #FF4655;
+    transition: .5s;
+}
+
+.socialPart a:hover {
+    color: #FF4655;
 }
 
 /* Header Part End */
@@ -115,11 +125,23 @@ p {
     padding: 13px 20px;
     margin-bottom: 220px;
     border-radius: 5px;
+    text-decoration-color: #FF4655;
+    transition: .5s;
+}
+
+.bannerText a:hover {
+    color: #FF4655;
 }
 
 .socialIcon a {
     color: #dddddd;
     font-size: 35px;
+    text-decoration-color: #FF4655;
+    transition: .5s;
+}
+
+.socialIcon a:hover {
+    color: #FF4655;
 }
 
 /* Banner Part End */
@@ -260,16 +282,23 @@ p {
 /* Popular Part Start */
 #popularPart {
     background-color: #191919;
+    position: relative;
 }
 
 .valorantImage img {
     padding-bottom: 90px;
 }
 
-
 .trendImage img {
     padding-top: 165px;
     padding-bottom: 90px;
+}
+
+.valorantImage img:hover,
+.trendImage img:hover {
+    transform: scale(1.02);
+    filter: brightness(1.15) drop-shadow(0px 8px 20px rgba(0, 0, 0, 0.3));
+    transition: 0.2s;
 }
 
 .popularHeading h3 {
@@ -277,7 +306,7 @@ p {
     font-size: 38px;
     font-weight: 700;
     line-height: 46px;
-    padding-top: 110px;
+    padding-top: 95px;
     text-align: right;
     position: relative;
 }
@@ -287,31 +316,35 @@ p {
     height: 5px;
     width: 105px;
     background: #ff4655;
-    right: 140px;
-    bottom: 0;
+    right: 130px;
+    bottom: 5px;
     content: "";
 }
 
+.popular-container {
+    position: absolute;
+    right: 100px;
+    bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .popularButton {
-    position: relative;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: #191919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    transition: 0.3s;
 }
 
-.popularButton1 {
-    position: absolute;
-    right: -20px;
-    bottom: 50px;
-    font-size: 40px;
-    color: #dddddd;
-    justify-content: end;
-}
-
-.popularButton2 {
-    position: absolute;
-    right: -20px;
-    bottom: 0;
-    font-size: 40px;
-    color: #dddddd;
-    justify-content: end;
+.popularButton:hover,
+.popularButton:hover {
+    color: #FF4655;
 }
 
 /* Popular Part End */
@@ -334,25 +367,36 @@ p {
 .liveHeading h3::after {
     position: absolute;
     background: #ff4655;
-    height: 5px;
+    height: 4px;
     width: 120px;
     bottom: 10px;
-    left: 150px;
+    left: 205px;
     content: " ";
 }
 
 .liveImageHolder {
     display: flex;
     align-items: center;
+    padding-bottom: 70px;
+    position: relative;
+    border-radius: 5px;
 }
 
-.liveImage img {
+.liveImage a:hover {
     padding-top: 80px;
-    transition: 0.5s;
-    transform: scale(0.95);
+    filter: grayscale(100%);
+    transform: scale(1.02);
+}
+.tournamentText {
+    font-size: 25px;
+    font-weight: 600;
+    font-family: "Oswald", sans-serif;
+    line-height: 60px;
 }
 
 /* Tournament Part End */
+
+
 /* About Part Start */
 /* About Part End */
 /* About Part Start */
