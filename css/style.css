@@ -31,11 +31,14 @@ p {
 
 /* All Common CSS End */
 /* Header Part Start */
+
 .navbar {
+    width: 100%;
     position: fixed;
+    z-index: 9999;
+    overflow: hidden;
     top: 0;
     left: 0;
-    width: 100%;
 }
 
 .nav-link {
@@ -99,7 +102,7 @@ p {
     position: absolute;
     height: 4px;
     width: 90px;
-    background: #dddddd;
+    background: #FF4655;
     right: 35px;
     bottom: 30px;
     content: " "
@@ -148,6 +151,7 @@ p {
 /* About Part Start */
 #aboutPart {
     background-color: #121212;
+    position: relative;
 }
 
 .aboutHeading h3 {
@@ -244,9 +248,10 @@ p {
 .aboutText a i {
     color: #ffff;
     margin-right: 5px;
+    position: absolute;
 }
 
-.counter {
+.counterItem {
     background-color: #212121;
     color: #dddddd;
     padding: 28px 95px;
@@ -257,7 +262,7 @@ p {
     margin-bottom: 80px;
 }
 
-.counter h3 {
+.counterItem h3 {
     color: #dddddd;
     font-family: "Oswald", sans-serif;
     font-size: 45px;
@@ -265,16 +270,17 @@ p {
     line-height: 72px;
 }
 
-.counter h3 i {
+.counterItem i {
     color: #FF4655;
     font-size: 12px;
+    right: 10px;
 }
 
-.counter p {
+.counterItem p {
     color: #dddddd;
     font-family: "Oswald", sans-serif;
-    font-size: 17px;
-    font-weight: 300;
+    font-size: 15px;
+    font-weight: 500;
     line-height: 18px;
 }
 
@@ -384,9 +390,15 @@ p {
 
 .liveImage a:hover {
     padding-top: 80px;
-    filter: grayscale(100%);
-    transform: scale(1.02);
 }
+
+.liveImage img {
+    width: 100%;
+    height: 240px;
+    filter: grayscale(100%);
+    transition: all linear 0.4s;
+}
+
 .tournamentText {
     font-size: 25px;
     font-weight: 600;
