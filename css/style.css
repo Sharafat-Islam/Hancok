@@ -399,6 +399,23 @@ p {
     transition: all linear 0.4s;
 }
 
+.prev {
+    font-size: 35px;
+    position: absolute;
+    top: 81%;
+    right: 0px;
+    transform: translateY(-50%);
+    z-index: 99999;
+}
+
+.next {
+    font-size: 35px;
+    position: absolute;
+    top: 72%;
+    right: 0px;
+    transform: translateY(-50%);
+}
+
 .tournamentText {
     font-size: 25px;
     font-weight: 600;
